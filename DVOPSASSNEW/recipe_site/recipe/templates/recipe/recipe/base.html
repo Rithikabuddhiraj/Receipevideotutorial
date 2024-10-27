@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Recipe Video Tutorials{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'tutorial/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="{% static 'tutorial/images/logo.png' %}" alt="Recipe Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'recipes' %}">Recipes</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Recipe Video Tutorials. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* Add your CSS styling here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Additional styling for your site */
